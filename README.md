@@ -78,3 +78,9 @@ You will find sample config files for theses plugins in `vendor/snowdog/frontool
   * `--theme name` - Process single theme.
   * `--disableLinting` - Disable SASS and CSS linting.
   * `--disableMaps` - Disable inline source maps generation.
+* `svginline` - Create Svg inline [gulp-sass-inline-svg](https://www.npmjs.com/package/gulp-sass-inline-svg)
+  * Put svg icon in /web/icons/svg/
+  * Create a font in /web/fonts/
+* `iconfont` - Create a font from svg [gulp-iconfont](https://www.npmjs.com/package/gulp-iconfont)
+  * Put svg icon in /web/icons/fonts/
+  * Create a font in /web/fonts/

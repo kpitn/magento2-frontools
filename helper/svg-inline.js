@@ -4,7 +4,7 @@ module.exports = function(gulp, plugins, config, name) { // eslint-disable-line 
         srcBase   = config.projectPath + 'var/view_preprocessed/frontools' + theme.dest.replace('pub/static', ''),
         stylesDir     = theme.stylesDir ? theme.stylesDir : 'styles';
 
-    return gulp.src(config['projectPath'] + theme['src'] + '/**/icons/**/*.svg')
+    return gulp.src(config['projectPath'] + theme['src'] + '/**/icons/svg/*.svg')
         .pipe(plugins.svgmin())
         .pipe(plugins.sassInlineSvg({
             destDir: config['projectPath'] + theme['src'] + '/' + stylesDir + '/svg'
