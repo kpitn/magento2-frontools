@@ -49,7 +49,9 @@
     "postcss-reporter": "~6.0.0",
     "run-sequence": "~2.2.1",
     "stylelint": "~9.8.0",
-    "stylelint-config-standard": "~18.2.0"
+    "stylelint-config-standard": "~18.2.0",
+    "gulp-sass-inline-svg": "~1.0.3",
+    "gulp-svgmin":"^2.1.0"
   },
   "scripts": {
     "babel": "gulp babel",
