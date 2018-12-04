@@ -6,8 +6,9 @@ module.exports = function(gulp, plugins, config, name) { // eslint-disable-line 
 
     return gulp.src(config['projectPath'] + theme['src'] + '/**/icons/svg/*.svg')
         .pipe(plugins.svgmin())
-        .pipe(plugins.sassInlineSvg({
-            destDir: config['projectPath'] + theme['src'] + '/' + stylesDir + '/svg'
+        .pipe(plugins.m2SassInlinesvg({
+            destDir: config['projectPath'] + theme['src'] + '/' + stylesDir + '/svg',
+            prefix: name
         }))
         .pipe(plugins.logger({
             display   : 'name',
