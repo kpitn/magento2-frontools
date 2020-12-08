@@ -1,10 +1,12 @@
 extends:
   - eslint:recommended
   - idiomatic
+parserOptions:
+  ecmaVersion: 2017
+  sourceType: module
 env:
   node: true
   es6: true
-  amd: true
 rules:
   no-multi-spaces: 0
   space-in-parens: 0
@@ -16,6 +18,7 @@ rules:
     - 2
     - 2
     -
+      SwitchCase: 1
       VariableDeclarator:
         var: 2
         let: 2
@@ -25,3 +28,9 @@ rules:
     - 'stroustrup'
     -
       allowSingleLine: false
+  one-var:
+    - 2
+    - never
+  semi:
+    - 2
+    - never
